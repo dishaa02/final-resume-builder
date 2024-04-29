@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Description Matching</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        background-image: url(images/hero-bg.png);
+    }
+    .container {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .box {
+        display: inline-block;
+        width: 45%;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    .box h2 {
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .button:hover {
+        background-color: #0056b3;
+    }
+    /* Hide the default file input button */
+    input[type="file"] {
+        display: none;
+    }
+    /* Style the custom upload button */
+    .upload-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .upload-button:hover {
+        background-color: #0056b3;
+    }
+    h2{
+        color:black
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Job Description Matching</h2>
+    <form action="/match" method="post" enctype="multipart/form-data">
+        <div class="box">
+            <h2>Submit Your Resume</h2>
+            <label for="resume-upload" class="upload-button">Upload Resume</label>
+            <input type="file" id="resume-upload" name="resume" accept=".docx">
+        </div>
+        <div class="box">
+            <h2>Submit Your Job Description</h2>
+            <label for="job-description-upload" class="upload-button">Upload Job Description</label>
+            <input type="file" id="job-description-upload" name="job_description" accept=".docx">
+        </div>
+        <button class="button" type="submit">Match Your Resume</button>
+    </form>
+</div>
+
+</body>
+</html>
+

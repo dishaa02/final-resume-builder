@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Grammar and Document Correction</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Check Grammar and Document Correction</h1>
+            <div class="upload-box">
+                <i class="icon fas fa-file-word"></i><br>
+                <form action="/check_grammar" method="post" enctype="multipart/form-data">
+                    <label for="resume-file" class="file-input-label">Choose File</label>
+                    <input type="file" id="resume-file" name="resume" accept=".docx"><br>
+                    <button class="button" type="submit">Check Grammar</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
+
+
